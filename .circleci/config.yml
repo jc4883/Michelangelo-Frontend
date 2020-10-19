@@ -1,6 +1,6 @@
 version: 2.1
-
-# Define the jobs we want to run for this project
+orbs:
+  aws-s3: circleci/aws-s3@1.0.11
 jobs:
   build:
     docker:
@@ -20,3 +20,11 @@ jobs:
           - ~/.cache
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: npm run test
+      - run: npm run build
+      - aws-s3/sync:
+          from: build
+          to: 's3://translator-app/'
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400"
+          overwrite: true
