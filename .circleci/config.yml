@@ -41,8 +41,8 @@ workflows: # Define a Workflow running the build job, then the deploy job
     jobs:
       - build
       - deploy:
-        requires:
-          - build # Only run deploy job once the build job has completed
-        filters:
-          branches:
-            only: main # Only deploy when the commit is on the Main branch
+          requires:
+          - build
+          filters:
+            branches:
+              only: main
