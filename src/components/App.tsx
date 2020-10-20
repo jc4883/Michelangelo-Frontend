@@ -13,6 +13,7 @@ export const store = configureStore();
 const App = () => {
   return (
     <div className="App">
+      I am here.
       <Provider store={store}>
         <BrowserRouter>
           <Switch>
