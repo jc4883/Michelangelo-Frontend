@@ -3,8 +3,7 @@ import { Route, Switch, BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import configureStore from "redux/configureStore";
 
-
-import SplashPage from './splash_page/SplashPage';
+import SplashPage from "./splash_page/SplashPage";
 
 import "./App.scss";
 
