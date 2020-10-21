@@ -10,6 +10,7 @@ const LoginPage = () => {
         <img
           className={styles.login_page_img}
           src="https://translator-app-assets.s3.amazonaws.com/1089265565-huge.jpg"
+          alt="login_page_img"
         />
       </div>
       <div className={styles.container}>
