@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import styles from "./SplashPage.module.scss";
 
 const SplashPage = () => {
@@ -9,19 +11,23 @@ const SplashPage = () => {
           <div className={styles.brand}>
             <span>Michelangelo</span>
           </div>
-          <div className={styles.menu}>Login</div>
+          <div className={styles.menu}>
+            <Link to="/login" className={styles.login_button}>
+              Login
+            </Link>
+          </div>
         </div>
       </nav>
 
       <section className={styles.lead_content}>
         <div className={styles.lead}>
           <h1>
-            The Messaging Service
-            <br /> that Translates
+            A Messaging Service
+            <br /> That Translates Everything
           </h1>
           <p className={styles.subtitle}>
-            Translate every text you send and receive into any language. It's
-            free, and for the web.
+            Send a text in one language, receive texts in another. It's free,
+            and for the web.
           </p>
         </div>
       </section>

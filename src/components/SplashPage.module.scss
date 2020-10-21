@@ -1,4 +1,3 @@
-// @use 'src/styles/fonts';
 @import "../styles/fonts.scss";
 @import "../styles/colors.scss";
 @import "../styles/shadow.scss";
@@ -18,21 +17,33 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-    }
+      padding: 0 10px;
 
-    .brand {
-      display: flex;
-      align-items: center;
+      .brand {
+        display: flex;
+        align-items: center;
 
-      span {
-        font-weight: 700;
-        font-size: 1.1rem;
+        span {
+          font-family: $michelangelo-font-family;
+          font-weight: $michelangelo-normal-weight;
+          font-size: $michelangelo-large-subtitle-size;
+        }
       }
-    }
 
-    .menu {
-      display: flex;
-      align-items: center;
+      .menu {
+        display: flex;
+        align-items: center;
+        .login_button {
+          color: $michelangelo-black;
+          font-family: $michelangelo-font-family;
+          font-weight: $michelangelo-bold-weight;
+          font-size: $michelangelo-description-size;
+          text-decoration: none;
+          background-color: $michelangelo-dark-green;
+          padding: 10px 30px;
+          border-radius: 20px;
+        }
+      }
     }
   }
 
