@@ -4,6 +4,7 @@ import { Provider } from "react-redux";
 import configureStore from "redux/configureStore";
 
 import SplashPage from "../components/SplashPage";
+import LoginPage from "../components/LoginPage";
 import MainPage from "./MainPage";
 
 export const store = configureStore();
@@ -16,6 +17,7 @@ const App = () => {
           <Switch>
             <Route exact path="/splash" component={SplashPage} />
             <Route exact path="/" component={MainPage} />
+            <Route exact path="/login" component={LoginPage} />
           </Switch>
         </BrowserRouter>
       </Provider>

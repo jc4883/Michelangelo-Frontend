@@ -1,0 +1,20 @@
+@import "./colors.scss";
+
+@mixin michelangelo-input {
+  background-color: $michelangelo-input-unfocused;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $michelangelo-input-unfocused;
+    background-color: $michelangelo-white;
+    margin: -1px;
+  }
+
+  &:focus {
+    border: 1px solid $michelangelo-dark-green;
+    background-color: $michelangelo-white;
+    margin: -1px;
+  }
+}

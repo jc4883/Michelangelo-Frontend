@@ -1,0 +1,26 @@
+@import "../styles/colors.scss";
+
+.LoginPage {
+  overflow: hidden;
+  position: relative;
+
+  .login_page_img_container {
+    width: auto;
+    height: 100vh;
+    .login_page_img {
+      height: 100%;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 0;
+    background-color: $michelangelo-white;
+    height: 100%;
+  }
+}

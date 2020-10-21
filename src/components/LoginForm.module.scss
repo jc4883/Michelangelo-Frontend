@@ -1,0 +1,49 @@
+@import "../styles/fonts.scss";
+@import "../styles/colors.scss";
+@import "../styles/mixins.scss";
+
+.LoginForm {
+  padding: 20px;
+
+  h1 {
+    font-family: $michelangelo-font-family;
+    font-weight: $michelangelo-normal-weight;
+    font-size: $michelangelo-large-subtitle-size;
+    margin: 10px 0;
+  }
+
+  .formik_form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-family: $michelangelo-font-family;
+      font-weight: $michelangelo-lightish-weight;
+      font-size: $michelangelo-small-subtitle-size;
+      margin: 9px 0;
+    }
+
+    .formik_field {
+      @include michelangelo-input;
+      width: 410px;
+      height: 48px;
+    }
+
+    .login_button {
+      width: 137px;
+      height: 48px;
+      background-color: $michelangelo-dark-green;
+      font-family: $michelangelo-font-family;
+      font-weight: $michelangelo-bold-weight;
+      font-size: $michelangelo-small-subtitle-size;
+      color: $michelangelo-white;
+      border: 0;
+      border-radius: 5px;
+      margin-top: 70px;
+
+      &:hover {
+        background-color: $michelangelo-darker-green;
+      }
+    }
+  }
+}
