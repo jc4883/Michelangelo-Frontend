@@ -5,7 +5,6 @@ import configureStore from "redux/configureStore";
 
 import SplashPage from "../components/SplashPage";
 import LoginPage from "../components/LoginPage";
-import MainPage from "./MainPage";
 
 export const store = configureStore();
 
