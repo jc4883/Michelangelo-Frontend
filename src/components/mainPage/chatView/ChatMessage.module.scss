@@ -1,0 +1,50 @@
+@import "../../../styles/fonts.scss";
+@import "../../../styles/colors.scss";
+
+.MyMessage {
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: $michelangelo-font-family;
+  color: $michelangelo-white;
+  display: flex;
+  justify-content: flex-end;
+
+  .content {
+    background-color: $michelangelo-blue;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 10px 13px;
+    margin-right: 10px;
+  }
+
+  .sending_content {
+    background-color: $michelangelo-lighter-blue;
+  }
+}
+
+.OtherMessage {
+  display: flex;
+  flex-direction: column;
+  font-family: $michelangelo-font-family;
+  margin-bottom: 15px;
+
+  .sender {
+    color: $michelangelo-lighter-gray;
+    font-size: $michelangelo-small-subtitle-size;
+    margin-left: 62px;
+  }
+  .container {
+    display: flex;
+    .profile_pic {
+      width: 30px;
+      height: auto;
+      margin: 0 10px;
+    }
+    .content {
+      background-color: $michelangelo-fine-gray;
+      border-radius: 20px;
+      width: fit-content;
+      padding: 10px 13px;
+    }
+  }
+}

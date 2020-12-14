@@ -23,7 +23,7 @@ const LoginForm = () => {
           actions.setSubmitting(false);
         }}
       >
-        <Form className={styles.formik_form}>
+        <Form className={styles.formik_form} autoComplete="off">
           <label>Username</label>
           <Field
             className={styles.formik_field}

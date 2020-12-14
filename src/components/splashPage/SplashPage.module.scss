@@ -1,6 +1,6 @@
-@import "../styles/fonts.scss";
-@import "../styles/colors.scss";
-@import "../styles/shadow.scss";
+@import "../../styles/fonts.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/shadow.scss";
 
 .SplashPage {
   .navigation {
@@ -23,10 +23,9 @@
         display: flex;
         align-items: center;
 
-        span {
-          font-family: $michelangelo-font-family;
-          font-weight: $michelangelo-normal-weight;
-          font-size: $michelangelo-large-subtitle-size;
+        .michelangelo_logo {
+          height: auto;
+          width: 134px;
         }
       }
 
@@ -97,6 +96,7 @@
       }
     }
   }
+
   .footer {
     background: $michelangelo-black;
     padding: 2rem 0;

@@ -1,0 +1,23 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
+.UserIdForm {
+  display: flex;
+  flex-direction: column;
+
+  font-family: $michelangelo-font-family;
+  font-size: $michelangelo-description-size;
+  font-weight: $michelangelo-lightish-weight;
+
+  button {
+    padding: 3px;
+    width: fit-content;
+    border-radius: 8px;
+    outline: none;
+    background-color: $michelangelo-blue;
+    color: white;
+    border: none;
+    font-size: $michelangelo-description-size;
+    margin: 5px 0;
+  }
+}

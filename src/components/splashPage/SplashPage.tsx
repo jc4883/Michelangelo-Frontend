@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import michelangelo_brand from "assets/Michelangelo-no-background.png";
+
 import styles from "./SplashPage.module.scss";
 
 const SplashPage = () => {
@@ -9,7 +11,11 @@ const SplashPage = () => {
       <nav className={styles.navigation}>
         <div className={styles.container}>
           <div className={styles.brand}>
-            <span>Michelangelo</span>
+            <img
+              className={styles.michelangelo_logo}
+              src={michelangelo_brand}
+              alt=""
+            />
           </div>
           <div className={styles.menu}>
             <Link to="/login" className={styles.login_button}>
@@ -66,7 +72,7 @@ const SplashPage = () => {
       </section>
       <footer className={styles.footer}>
         <p>
-          <strong>Made with {"<3"} from P+T</strong>
+          <strong>Made with {"<3"} from Michelangelo</strong>
         </p>
       </footer>
     </section>

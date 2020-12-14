@@ -1,0 +1,29 @@
+@import "../../../styles/fonts.scss";
+@import "../../../styles/colors.scss";
+
+.chatEntry {
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+  min-height: 60px;
+  justify-content: space-evenly;
+  font-family: $michelangelo-font-family;
+  font-size: $michelangelo-small-subtitle-size;
+  border-bottom: 1px solid $michelangelo-fine-gray;
+  cursor: pointer;
+
+  .chatName {
+    font-weight: $michelangelo-normal-weight;
+  }
+  .lastMessage {
+    font-weight: $michelangelo-light-weight;
+  }
+
+  &.selected {
+    background-color: $michelangelo-fine-gray;
+  }
+}
+
+.chatEntry:last-child {
+  border: none;
+}

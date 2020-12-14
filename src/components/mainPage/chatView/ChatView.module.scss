@@ -1,0 +1,48 @@
+@import "../../../styles/colors.scss";
+@import "../../../styles/fonts.scss";
+
+.ChatView {
+  max-height: 100vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+
+  .navigation {
+    height: 50px;
+    background: linear-gradient(
+      to right,
+      $michelangelo-ultra-fine-gray,
+      $michelangelo-white 20%
+    );
+    display: flex;
+    align-items: center;
+
+    .header {
+      font-family: $michelangelo-font-family;
+      font-size: $michelangelo-description-size;
+      font-weight: $michelangelo-normal-weight;
+      margin: 0 9px;
+      .user_ids {
+        margin-left: 15px;
+        color: $michelangelo-lighter-gray;
+        font-weight: $michelangelo-lightish-weight;
+      }
+    }
+  }
+  .messages {
+    height: 100%;
+    overflow: scroll;
+  }
+
+  .unselected_conversation_view {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $michelangelo-font-family;
+    font-size: $michelangelo-label-size;
+    font-weight: $michelangelo-normal-weight;
+    color: $michelangelo-lighter-gray;
+  }
+}
